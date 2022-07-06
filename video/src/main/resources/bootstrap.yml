@@ -1,0 +1,21 @@
+server:
+  port: 9993
+spring:
+  application:
+    name: video
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 4a4b61ed-3552-4678-bb8a-c9ed6e747076
+      config:
+        server-addr: localhost:8848
+        namespace: 4a4b61ed-3552-4678-bb8a-c9ed6e747076
+        group: video
+        name: video-main
+        file-extension: yml
+        ext-config:
+          -
+            group: common
+            data-id: common-main.yml
+            refresh: true

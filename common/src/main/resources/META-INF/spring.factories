@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.example.yingxue.common.common.config.MPPagerConfig,\
+com.example.yingxue.common.common.config.RedisCacheConfig,\
+com.example.yingxue.common.common.config.GsonConfig,\
+com.example.yingxue.common.common.config.MQConfig,\
+com.example.yingxue.common.common.config.FeignRequestConfig

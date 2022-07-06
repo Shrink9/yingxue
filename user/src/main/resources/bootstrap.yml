@@ -1,0 +1,21 @@
+server:
+  port: 9992
+spring:
+  application:
+    name: user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 4a4b61ed-3552-4678-bb8a-c9ed6e747076
+      config:
+        server-addr: localhost:8848
+        namespace: 4a4b61ed-3552-4678-bb8a-c9ed6e747076
+        group: user
+        name: user-main
+        file-extension: yml
+        ext-config:
+          -
+            group: common
+            data-id: common-main.yml
+            refresh: true

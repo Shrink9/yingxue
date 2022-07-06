@@ -1,0 +1,21 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 4a4b61ed-3552-4678-bb8a-c9ed6e747076
+      config:
+        server-addr: localhost:8848
+        #命名空间(也就是哪个项目)id,默认是public的id
+        namespace: 4a4b61ed-3552-4678-bb8a-c9ed6e747076
+        #组(也就是项目的哪个微服务),默认是DEFAULT_GROUP
+        group: gateway
+        #文件名(不包含扩展名)
+        name: gateway-main
+        #文件扩展名
+        file-extension: yml
+
